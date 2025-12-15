@@ -57,7 +57,7 @@ void Group::move(double x, double y){
 std::string Group::toString(){
     std::ostringstream oss;
     oss << "Group(";
-    // order: lines, triangles, quadrilaterals
+   
     for(auto &l: lines) { oss << l.toString() << ", "; }
     for(auto &t: triangles) { oss << t.toString() << ", "; }
     for(auto &q: quadrilaterals) { oss << q.toString() << ", "; }
